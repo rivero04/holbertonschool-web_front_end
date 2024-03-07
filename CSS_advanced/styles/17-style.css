@@ -17,9 +17,22 @@ body {
     line-height: var(--line-height-base);
 }
 
-a {
+a:link {
+    color: var(--text-color);
     text-decoration: none;
-}
+  }
+  
+a:visited {
+    font-style: italic;
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+  
+a:active {
+    background-color: var(--color-light-grey);
+    }
 
 .visually-hidden {
     display: none;
@@ -102,24 +115,6 @@ a {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
-   }
-
-a[href] {
-    }
-   
-   /* Estado visitado */
-a[href]:visited {
-    font-style: italic;
-   }
-   
-   /* Estado hover */
-a[href]:hover {
-    text-decoration: underline;
-   }
-   
-   /* Estado activo */
-a[href]:active {
-    background-color: var(--color-light-grey);
    }
 
 .footer {
